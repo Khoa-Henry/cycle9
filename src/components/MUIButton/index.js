@@ -3,7 +3,7 @@ import Button from '@mui/material/Button';
 
 const MUIButton = (props) => {
     return(
-        <Button variant={`${props.style}`} disabled={props.turnoff}>{props.buttonName}</Button>
+        <Button onClick={props.onClick} variant={`${props.style}`} disabled={props.turnoff}>{props.buttonName}</Button>
     )
 }
 export default MUIButton;
